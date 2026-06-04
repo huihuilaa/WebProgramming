@@ -1,0 +1,55 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<div class="content-bound" id="header">
+    
+    <div id="logo">
+        <a href="products.jsp">
+            <img src="./picture/logo.png" alt="HIMEHINA Store Logo" />
+        </a>
+    </div>
+    
+    <div id="nav">
+        <ul>
+            <li class="color-blue">
+                <a href="products.jsp">商品</a>
+                <ul class="subs">
+                    <li><a href="products.jsp">所有周邊</a></li>
+                </ul>
+            </li>
+            
+            <li class="color-red">
+                <a href="profile.jsp">個人檔案</a>
+                <ul class="subs">
+                    <li><a href="profile.jsp">會員中心</a></li>
+                    <li><a href="login.jsp">切換帳號</a></li>
+                </ul>
+            </li>
+            
+            <li class="color-yellow">
+                <a href="cart.jsp">購物車</a>
+                <ul class="subs">
+                    <li><a href="cart.jsp">前往購物車</a></li>
+                </ul>
+            </li>
+            
+            <li class="color-green">
+                <a href="#">帳號</a>
+                <ul class="subs last">
+                    <li><a href="login.jsp">會員登入</a></li>
+                    <li><a href="register.jsp">會員註冊</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#nav li ul").hide();
+        $("#nav li").hover(function () {
+            $(">ul:not(:animated)", this).slideDown("fast");
+        },function () {
+            $(">ul", this).slideUp("fast");
+        });
+    });
+</script>
