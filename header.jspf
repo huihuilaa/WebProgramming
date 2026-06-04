@@ -2,7 +2,7 @@
 <div class="content-bound" id="header">
     
     <div id="logo">
-        <a href="products.jsp">
+        <a href="products.html">
             <img src="./picture/logo.png" alt="HIMEHINA Store Logo" />
         </a>
     </div>
@@ -10,9 +10,9 @@
     <div id="nav">
         <ul>
             <li class="color-blue">
-                <a href="products.jsp">商品</a>
+                <a href="index.html">商品</a>
                 <ul class="subs">
-                    <li><a href="products.jsp">所有周邊</a></li>
+                    <li><a href="index.html">所有周邊</a></li>
                 </ul>
             </li>
             
@@ -20,7 +20,6 @@
                 <a href="profile.jsp">個人檔案</a>
                 <ul class="subs">
                     <li><a href="profile.jsp">會員中心</a></li>
-                    <li><a href="login.jsp">切換帳號</a></li>
                 </ul>
             </li>
             
@@ -40,9 +39,7 @@
             </li>
         </ul>
     </div>
-
 </div>
-
 <script type="text/javascript">
     $(function () {
         $("#nav li ul").hide();
